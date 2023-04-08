@@ -6,6 +6,7 @@ Author: Richard Clark - http://richclarkdesign.com
 Twitter: @rich_clark
 */
 
+
 html,
 body,
 div,
@@ -86,6 +87,8 @@ video {
 
 body {
 	line-height: 1;
+	font-family: 'Inter', sans-serif;
+	background-color: #F5F5F5;
 }
 
 article,
