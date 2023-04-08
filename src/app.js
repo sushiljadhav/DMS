@@ -1,17 +1,19 @@
 import React from "react";
-import { useRoutes } from "react-router";
+import { Routes , Route } from "react-router-dom";
 import Login from "./pages/Login/login";
+import Layout from "./layout";
 import Dashboard from "./pages/Dashboard/dashboard";
 
 function App() {
-  let element = useRoutes(
-    [
-      { path: "/", element: <Login></Login> },
-      { path: "/dashboard", element: <Dashboard></Dashboard> }
-    ]
-    );
-
-  return element;
+  return(
+    <Routes>
+      <Route path="/" element={<Login></Login>}></Route>
+      <Route path="/dashboard" element={<Layout></Layout>}> 
+        <Route index element={<Dashboard />}></Route>
+      </Route>
+    </Routes>
+  )
+ 
 }
 
 export default App;
