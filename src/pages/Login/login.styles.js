@@ -4,7 +4,7 @@ import theme from "../../theme";
 
 export const loginStyle = makeStyles((theme) => ({
     container: {
-        maxWidth : "953px !important",
+        maxWidth : "800px !important",
         width:'100% !important',
         backgroundColor: theme.palette.primary.default,
         boxShadow : '17px 19px 10px rgba(0, 0, 0, 0.03)',
@@ -15,7 +15,7 @@ export const loginStyle = makeStyles((theme) => ({
     leftContainer : {
         background: theme.palette.primary.main,
         borderRadius: '20px',
-        maxWidth:'397px',
+        maxWidth:'329px',
         width:'100%',
         padding:'63px 27px 40px',
     },
@@ -86,14 +86,24 @@ export const loginStyle = makeStyles((theme) => ({
         fontSize: '16px',
         lineHeight: '25px',
         color: '#6D6D6D',
-        marginBottom:"40px",
+        marginBottom:"20px",
+    },
+    createLink: {
+        textTransform:"lowercase !important"
+    },
+    signInBottomText : {
+        fontWeight: '400',
+        fontSize: '12px',
+        lineHeight: '16px',
+        color: '#6D6D6D',
+        marginTop:"20px",
     },
     formWrapper : {
         maxWidth:'463px',
         width : '100%'
     },
     formInputBinder : {
-        marginBottom : '26px'
+        marginBottom : '20px'
     },
     button : {
         maxWidth:'100%',
@@ -101,6 +111,6 @@ export const loginStyle = makeStyles((theme) => ({
         height:'47px',   
     },
     formButtonBinder : {
-        margin : "30px 0 0"
+        margin : "20px 0 0"
     }
 }));
