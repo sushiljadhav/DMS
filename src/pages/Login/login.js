@@ -9,9 +9,6 @@ import { v4 as uuidv4 } from 'uuid';
 
 function Login() {
   const [roomID,setRoomID]  = useState('');
-
-
-
   const [userName,setUserName]  = useState('');
   const [open, setOpen] = useState(false);
   const [message,setMessage] = useState('');
@@ -78,14 +75,14 @@ function Login() {
     <>
       <Container maxWidth="lg" className={loginStyles.container}>
         <Stack direction="row" spacing={4}>
-          <Box compontent="div" className={loginStyles.leftContainer}>
+          <Box component="div" className={loginStyles.leftContainer}>
             <Box component="div">
               <Box component='h2' variant='h2' className={loginStyles.title}>Document Management System</Box>
               <Box component='h1' variant='h1' className={loginStyles.heading}>Start your journey with us</Box>
               <Box component='h3' variant='h3' className={loginStyles.subheading}>Lorem ipsum dolor sit amet consectetur. Ipsum massa nunc arcu porttitor </Box>
             </Box>
           </Box>
-          <Box compontent="div" className={loginStyles.rightContainer}>
+          <Box component="div" className={loginStyles.rightContainer}>
             <Box component='h1' variant='h1' className={loginStyles.signInText}>Sign In</Box>
             <Box component='h2' variant='h2' className={loginStyles.signInSubText}>Please paste invitation ROOM ID </Box>
             <Box component={loginStyles.formWrapper}>
